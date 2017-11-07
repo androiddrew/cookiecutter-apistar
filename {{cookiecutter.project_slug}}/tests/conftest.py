@@ -9,7 +9,7 @@ from {{cookiecutter.project_slug}}.app import commands, routes, components
 
 settings = {
     'DATABASE': {
-        #'URL': 'postgresql://apistar:local@localhost/test_cookie_api',
+        #'URL': 'postgresql://apistar:local@localhost/{{cookiecutter.project_slug}}',
         'URL': 'sqlite:///',
         'METADATA': Base.metadata
     },
@@ -21,6 +21,7 @@ backend = SQLAlchemyBackend(settings)
 
 @pytest.fixture(autouse=True)
 def create_db():
+    """Creates a test database with session scope"""
     Base.metadata.create_all(backend.engine)
 
     yield
@@ -30,7 +31,7 @@ def create_db():
 
 @pytest.fixture(name='rb_session')
 def db_session_fixure():
-    "Returns a SQLAlchemy session with automatic rollback"
+    """Returns a SQLAlchemy session with automatic rollback"""
     session = backend.Session()
     try:
         yield session
