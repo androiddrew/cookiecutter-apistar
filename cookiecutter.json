@@ -1,0 +1,9 @@
+{
+  "full_name": "Drew Bednar",
+  "email": "drew@androiddrew.com",
+  "github_username": "andoiddrew",
+  "project_name": "apistar-app",
+  "project_slug": "{{ cookiecutter.project_name.lower().strip().replace(' ', '_').replace('-','_')}}",
+  "description": "An apistar project templated by cookiecutter-apistar",
+  "year": "2017"
+}
