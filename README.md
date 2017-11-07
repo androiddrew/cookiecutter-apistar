@@ -16,7 +16,7 @@ $ cd <app_dir>
 $ python -m venv env
 $ source env/bin/activate
 $ pip install -r requirements
-
+```
 #### Run tests
 ```
 $ pytest -v
