@@ -4,7 +4,7 @@ An API Star template for [cookiecutter](https://github.com/audreyr/cookiecutter)
 
 ## Usage
 
-```python
+```
 $ pip install cookiecutter
 $ cookiecutter https://github.com/androiddrew/cookiecutter-apistar
 ```
