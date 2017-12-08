@@ -1,12 +1,12 @@
 # cookiecutter-apistar
 
-An API Star template for [cookiecutter](https://github.com/audreyr/cookiecutter)
+An API Star template for [cookiecutter](https://github.com/audreyr/cookiecutter) with a preference for a postgres backend
 
 ## Usage
 
 ```python
 $ pip install cookiecutter
-$ cookiecutter https://git.androiddrew.com/androiddrew/cookiecutter-apistar.git
+$ cookiecutter https://github.com/androiddrew/cookiecutter-apistar
 ```
 You will be asked for some basic information regarding your project (name, project name, etc.). This info will be used in your new project
 
@@ -36,6 +36,10 @@ $ python wsgi_app.py run
 MIT Licensed.
 
 ## Changelog
+
+### 0.1.0 (12/08/2017)
+- Public release
+- Corrected Test database connection string in conftest
 
 ### 0.0.1 (11/07/2017)
 - Initial release

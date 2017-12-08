@@ -9,7 +9,7 @@ from {{cookiecutter.project_slug}}.app import commands, routes, components
 
 settings = {
     'DATABASE': {
-        #'URL': 'postgresql://apistar:local@localhost/{{cookiecutter.project_slug}}',
+        #'URL': 'postgresql://@localhost/test_{{cookiecutter.project_name}}',
         'URL': 'sqlite:///',
         'METADATA': Base.metadata
     },
