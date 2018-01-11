@@ -26,15 +26,12 @@ _settings = {
     'RENDERERS': [JSONRenderer()]
 }
 
-
-routes = routes
-
 commands = sqlalchemy_backend.commands
 
 components = sqlalchemy_backend.components
 
 
-def application_factory(settings={}):
+def application_factory(settings={}, _settings=_settings, routes=routes, commands=commands, components=components):
     """Returns an instance of Cookie API"""
     app_settings = {**_settings, **settings}
     return App(settings=app_settings,
